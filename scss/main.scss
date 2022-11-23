@@ -1,0 +1,18 @@
+@import "./utils/variables.scss";
+
+@import "./base/base";
+
+@import "./utils/mixin.scss";
+@import "./utils/moldes.scss";
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/carousel.scss";
+@import "./components/btns";
+@import "./components/portada";
+@import "./components/cards";
+@import "./components/forms.scss";
+
+@import "./pages/contact.scss";
+@import "./pages/index";
+@import "./pages/eventos.scss";

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos y Regalos Empresariales</title>
+    <meta name="description"
+        content="Opciones para que regales a tus empleados, amigos, familia, posibildiad de bandejas personalizadas para tus festejos y eventos">
+   <!-- Link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Link to Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Link to Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lora&family=Quattrocento:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Link to css style-sheet-->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<!-- Begining of the Body -->
+
+<body>
+    <!-- Header (Logo + Slogan + NavBar) -->
+    <header class="navbar navbar-expand-xl border-bottom border-warning border-3 border-opacity-10 ">
+        <div class="container">
+            <div class="marca">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.jpg" alt="logo de marca" class="logo"> 
+                    <h2>LFT- Chocolat et Plus </h2>
+                    <h2>Un vrai bonheure</h2>
+                </a>
+            </div>
+            <nav class="barranav order-first">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active item" aria-current="page" href="../index.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item" href="nuestros-sabores.html">Nuestros Sabores</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle item" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tienda Online
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item item" href="productos.html">Productos</a></li>
+                                <li><a class="dropdown-item item"
+                                        href="eventos.html">Eventos
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main of the page -->
+    <main class=" bg-light ">
+        <h2 class="titulo-principal container-fluid">FESTEJAMOS CON VOS! </h2>
+
+        <div class="container padreEvento">
+            <div class="row">
+                <div class="col-xl-6 justify-content-center align-content-center">
+                    <video src="../videos/video-evento2.mp4" controls class="VideoEvento"></video>
+                </div>
+                <div class="col-xl-6 justify-content-center align-content-center">
+                    <p class="TextoEvento">Rellená el formulario siguiente y en un plazo de 24 hs nos contactaremos con
+                        vos
+                        para brindarte detalles de todas las opciones que tenés dependiendo de lo que estés buscando
+                        para tu
+                        evento o empresa, además te enviaremos una aproximación del costo que dependerá de la cantidad
+                        de
+                        personas y tipo de producto que estés buscando! </p>
+                </div>
+            </div>
+        </div>
+        <!-- Formulario de Cotización -->
+        <form class="container" action="">
+            <h3>Formulario para pedir cotización</h3>
+            <div>
+                <label for="evento-regalo">Evento / Regalo Empresarial</label>
+                <select name="evento-regalo" id="selector-Evento-Regalo">
+                    <option value="Evento"> Evento</option>
+                    <option value="Regalo-Empresarial"> Regalo Empresarial</option>
+                </select>
+            </div>
+            <div>
+                <label for="tipo-de-articulo"> Tipo de Artículo</label>
+                <select name="Tipo-de-articulo" id="selector-articulo">
+                    <option value="Caja-pequeña"> Caja x6</option>
+                    <option value="Caja-grande"> Caja x20</option>
+                    <option value="Bandeja-evento"> Bandejas mixtas </option>
+                </select>
+            </div>
+            <div>
+                <label for="Cantidad-de-personas"> Cantidad de Personas</label>
+                <input type="number" name="cantidad-personas" min="5">
+            </div>
+            <div>
+                <label for="telefono-contacto"> Teléfono de Contacto </label>
+                <input type="tel" name="celular">
+            </div>
+            <div>
+                <label for="Fecha-entrega"> Fecha de Entrega </label>
+                <input type="date" name="fecha-entrega">
+            </div>
+            <div class="w-100 d-flex justify-content-center align-items-center">
+                <label for="Aclaraciones"> Detalles / Aclaraciones </label>
+                <textarea class="form-control w-75"  rows="4"> </textarea>
+            </div>
+            <a href="" class="btn ">Cotizar</a>
+        </form>
+        </div>
+    </main>
+    <!-- Footer of the page -->
+    <footer>
+        <div class="pie">
+            <section class=" container ">
+                <div class="row">
+                    <div class="col-xl-6 d-xl-flex flex-column justify-content-center">
+                        <h2 class=" text-center text-xl-start fw-bold  ">LFT - Chocolat et plus</h2>
+                        <h3 class=" text-center text-xl-start fw-bold">Un Vrai Bonheure</h3>
+                    </div>
+                    <div class=" d-flex justify-content-center col-xl-6 justify-content-xl-end">
+                        <a class="icon" href="https://www.facebook.com/laferre.boutique" target="_blank"> <i
+                                class="bi bi-facebook"></i>
+                        </a>
+                        <a class="icon" href="https://wa.me/549121152" target="_blank"><i
+                                class="bi bi-whatsapp "></i></a>
+                        <a class="icon" href="https://www.instagram.com/lft_chocolatetplus/" target="_blank"><i
+                                class="bi bi-instagram "></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer nav of the page -->
+        <div class="container">
+            <div class="row">
+                <div class=" col-xl-6">
+                    <ul class=" navegadorpie text-center  text-xl-start  fw-bold">
+                        <li><a href="../index.html"> About Us</a></li>
+                        <li><a href="nuestros-sabores.html">Nuestros Sabores</a></li>
+                        <li><a href="productos.html">Nuestros Productos</a></li>
+                        <li><a href="eventos.html"> Eventos y Regalos Empresariales</a>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Map -->
+                <div class="d-flex justify-content-center col-xl-6 justify-content-xl-end">
+                    <a href="https://goo.gl/maps/ZJGGMTLi22PTHH928" target="_blank"> <img src="../img/mapa.png"
+                            alt="mapa mostrando la ubicación" class="map"></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- link a js  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
